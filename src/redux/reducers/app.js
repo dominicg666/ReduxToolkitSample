@@ -1,4 +1,4 @@
-import { createSlice, configureStore } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 import { getPosts } from '../actions/app/asyncActions';
 const appSlice = createSlice({
   name: 'app',

@@ -1,9 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native';
 
 export default function AppContainer({
-  children
+  children,
+  ...rest
 }) {
   return (
-    <NavigationContainer>{children}</NavigationContainer>
+    <NavigationContainer {...rest}>{children}</NavigationContainer>
   );
 }

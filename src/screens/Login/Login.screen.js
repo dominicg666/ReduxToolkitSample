@@ -5,7 +5,7 @@ import {
 
 const Login = () => {
 
-  return (<View>
+  return (<View style={{backgroundColor:"#fff"}}>
 
   </View>);
 }

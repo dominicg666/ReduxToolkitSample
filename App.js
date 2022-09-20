@@ -10,6 +10,7 @@ import React from 'react';
 import store from './src/redux';
 import StoreProvider from './src/provider';
 import ContextProvider from './src/context/contextProvider'
+import NavigationContainer from './src/navigator';
 
 const App = () => {
 
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <StoreProvider store={store}>
       <ContextProvider>
-
+        <NavigationContainer />
       </ContextProvider>
     </StoreProvider>
   );

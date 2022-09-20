@@ -1,12 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import appSlice from './reducers/app'
+const reducer = combineReducers({
+  app: appSlice.reducer
+});
 
-
-store.subscribe(() => console.log(store.getState()))
-
+// 
 
 const store = configureStore({
-  app: appSlice.reducer
+  reducer
 })
+store.subscribe(() => console.log(store.getState()))
+
 
 export default store;
